@@ -1,5 +1,5 @@
 # TerrariaLauncher
-[![License: MIT](https://img.shields.io/badge/license-MIT-red.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/license-MIT-red.svg)](https://opensource.org/licenses/MIT)
 
 A custom launcher for terraria coded in python, this is a work in progress.
 
