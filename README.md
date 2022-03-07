@@ -1,4 +1,4 @@
-# Terraria-Launcher
+# TerrariaLauncher
 
 A custom launcher for terraria coded in python, this is a work in progress.
 
