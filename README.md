@@ -7,8 +7,7 @@ A custom launcher for terraria coded in python, this is a work in progress.
 - Stable data backup implementation
 - Terraria instance management
 - Support for all versions between 1.0.0 - 1.4.2.3
-- Automatic Terraria install location detection
-- Automatic Terraria save location detection
+- Automatic Terraria install and save location detection
 
 ### Important info
 Versions will be downloaded from <a href="https://archive.org">Internet Archive</a>, meaning download speeds could be slow.
