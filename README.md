@@ -1,9 +1,7 @@
 # Terraria-Launcher
 
-A custom launcher for terraria coded in python
-This can be unstable so backups of your data is advised
+A custom launcher for terraria coded in python, this is a work in progress.
 
-# This is in the process of being rewritten
 ### Future features
 - [x]Stable data backup implementation
 - [x]Profiles, to avoid data corruption
@@ -12,6 +10,5 @@ This can be unstable so backups of your data is advised
 - [x]Automatic Terraria save location detection
 
 ### Important info
-Versions will be downloaded from <a href="https://archive.org">Archive.org</a>, meaning download speeds might be slow
-If you will need to configure Terraria save location and Terraria install location
-correctly because the data might be deleted or overwritten
+Versions will be downloaded from <a href="https://archive.org">archive.org</a>, meaning download speeds could be slow.
+If you will need to configure Terraria save location and Terraria install location correctly because the data might be deleted or overwritten.
