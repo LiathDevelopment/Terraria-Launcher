@@ -11,5 +11,5 @@ A custom launcher for terraria coded in python, this is a work in progress.
 - Automatic Terraria save location detection
 
 ### Important info
-Versions will be downloaded from <a href="https://archive.org">archive.org</a>, meaning download speeds could be slow.
+Versions will be downloaded from <a href="https://archive.org">Internet Archive</a>, meaning download speeds could be slow.
 If you will need to configure your Terraria save location and Terraria install location correctly because the data might be deleted or overwritten.
