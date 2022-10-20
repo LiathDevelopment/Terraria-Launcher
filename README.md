@@ -11,8 +11,8 @@ A custom launcher for terraria coded in python, this is a work in progress.
 - Version downloads hosted on archive.org rather than a local server
 
 ### Known issues
-- Server previously used for downloading versions is down
-- No indication of client download progress
+- Solved> Server previously used for downloading versions is down
+- Solved> No indication of client download progress
 - Instance data handling isn't very secure/efficient
 
 ### Important info
