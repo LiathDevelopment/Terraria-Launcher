@@ -1,3 +1,4 @@
+from instances_handler import *
 from launcher_handler import *
 from game_manager import *
 from tab_changelog import *
@@ -17,7 +18,7 @@ def main_setup():
             launch_game_button.grid_remove()
             for widgets in tab_instances.winfo_children():
                 widgets.destroy()
-            log_message(logging.INFO, "Setup: Cleared tab_instances window children")
+            log_message(logging.INFO, "Setup: Destroyed tab_instances children")
             tab_instances_window(tab_instances)
         else:
             create_instance_button.grid_remove()
@@ -58,7 +59,7 @@ def main_setup():
     launch_game_button.grid(column=0, row=0, pady=10, sticky=N)
     ToolTip(launch_game_button, msg="Launch Terraria", delay=1)
 
-    create_instance_button = ttk.Button(toolbar_frame, text="Create Instance", width=14, command=lambda: error_window(root, "Instance creation failed", "This hasn't been implemented"))
+    create_instance_button = ttk.Button(toolbar_frame, text="Create Instance", width=14, command=lambda: create_instance_window(root))
     create_instance_button.grid(column=1, row=0, pady=10, sticky=N)
     ToolTip(create_instance_button, msg="Create a new Instance", delay=1)
 
@@ -70,7 +71,7 @@ def main_setup():
     tab_changelog_window(tab_changelog)
 
     log_message(logging.INFO, "Setup: Finished intialising children windows")
-
+    
     root.mainloop()
 
 main_setup()

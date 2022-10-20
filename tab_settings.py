@@ -18,11 +18,11 @@ def tab_settings_window(parent):
     save_directory.set("{save_directory}")
 
     # game settings
-    game_settings = Frame(parent, highlightbackground="black", highlightthickness=1)
+    game_settings = LabelFrame(parent, text="Instance Settings")
     game_settings.pack(padx=10, pady=24)
 
     download_option_menu = Frame(game_settings)
-    download_option_menu.grid(column=0, row=2, padx=5)
+    download_option_menu.grid(column=0, row=0, padx=5)
 
     option_menu = Frame(download_option_menu, highlightbackground="black", highlightthickness=1)
     option_menu.grid(column=1, row=0, padx=5)
@@ -32,18 +32,15 @@ def tab_settings_window(parent):
     
     Label(game_settings, text="").grid(column=1, row=0, padx=250)
     install_version_button = ttk.Button(game_settings, text=f"Install version", width=20, command=lambda: download_window(parent, selected_version.get()))
-    install_version_button.grid(column=2, row=2, padx=3)
+    install_version_button.grid(column=2, row=0, padx=3)
     ToolTip(install_version_button, msg="Download and install the selected version", delay=1)
 
-    Label(game_settings, text="Instance settings", fg="black").grid(column=0, row=0, sticky=W)
-    Label(game_settings, text="").grid(column=0, row=1)
-
     # install settings
-    install_settings = Frame(parent, highlightbackground="black", highlightthickness=1)
+    install_settings = LabelFrame(parent, text="Install configuration")
     install_settings.pack(padx=10, pady=0)
 
     location_menu = Frame(install_settings)
-    location_menu.grid(column=0, row=2)
+    location_menu.grid(column=0, row=0)
 
     Label(location_menu, text="Terraria install location:", fg="black").grid(column=0, row=0)
     ttk.Entry(location_menu, textvariable=install_directory, width=48).grid(column=1, row=0, padx=5)
@@ -55,6 +52,3 @@ def tab_settings_window(parent):
     update_locations_button = ttk.Button(location_menu, text=f"Update Locations", width=20)
     update_locations_button.grid(column=4, row=1, padx=3)
     ToolTip(update_locations_button, msg="Update Terraria's install and save locations", delay=1)
-
-    Label(install_settings, text="Install configuration", fg="black").grid(column=0, row=0, sticky=W)
-    Label(install_settings, text="").grid(column=0, row=1)
