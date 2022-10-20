@@ -1,5 +1,6 @@
 from launcher_handler import *
 
+from random import randint, seed
 from tkscrolledframe import ScrolledFrame
 from tktooltip import ToolTip
 import tkinter.ttk as ttk
@@ -11,7 +12,7 @@ def identify_button(button_id):
 
 def add_instance(parent, instance_id):
     selected = False
-    if instance_id == 3202211: selected = True
+    if instance_id == 9877341: selected = True
 
     highlight_colour = "black"
     highlight_thickness = 1
@@ -42,6 +43,7 @@ def add_instance(parent, instance_id):
 
 def tab_instances_window(parent):
     log_message(logging.INFO, "Setup: Initialised instances window")
+    seed(12)
 
     scrollable = ScrolledFrame(parent, scrollbars="vertical", relief=FLAT)
     scrollable.pack(side="top", expand=1, fill="both")
@@ -50,7 +52,7 @@ def tab_instances_window(parent):
     Label(main_frame, text="").pack()
     
     for x in range(1,25):
-        instance_id = int(f"{x}202211")
+        instance_id = randint(1000000, 9999999)
         add_instance(main_frame, instance_id)
 
     Label(main_frame, text="").pack()
